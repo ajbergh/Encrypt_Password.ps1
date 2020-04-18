@@ -35,9 +35,9 @@ $PasswordFile = $WorkingDir + "password.txt"
 
 $Key = Get-Content $KeyFile
 
-#$passinput = read-host -assecurestring -Prompt 'Enter the password you would like to encrypt'
+$passinput = read-host -assecurestring -Prompt 'Enter the password you would like to encrypt'
 #$passinput = read-host -Prompt 'Enter the password you would like to encrypt'
-#$passinput = "Veeam123!"
+
 
 $securedValue = Read-Host -AsSecureString -Prompt 'Enter the password you would like to encrypt'
 $bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($securedValue)
